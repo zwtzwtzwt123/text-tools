@@ -4,6 +4,7 @@ import ToolTabs from './components/ToolTabs'
 import WordCounter from './components/WordCounter'
 import TextFormatter from './components/TextFormatter'
 import CaseConverter from './components/CaseConverter'
+import MdToWechat from './components/MdToWechat'
 
 const TABS = [
   { id: 'wordcount', label: '字数统计' },
@@ -22,6 +23,8 @@ function App() {
         return <WordCounter />
       case 'format':
         return <TextFormatter />
+      case 'md2wechat':
+        return <MdToWechat />
       case 'caseconvert':
         return <CaseConverter />
       default:
