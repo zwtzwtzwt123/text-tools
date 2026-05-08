@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Header from './components/Header'
 import ToolTabs from './components/ToolTabs'
 import WordCounter from './components/WordCounter'
+import TextFormatter from './components/TextFormatter'
+import CaseConverter from './components/CaseConverter'
 
 const TABS = [
   { id: 'wordcount', label: '字数统计' },
@@ -18,6 +20,10 @@ function App() {
     switch (activeTab) {
       case 'wordcount':
         return <WordCounter />
+      case 'format':
+        return <TextFormatter />
+      case 'caseconvert':
+        return <CaseConverter />
       default:
         return (
           <div className="flex items-center justify-center h-64 text-gray-400 text-lg">
