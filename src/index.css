@@ -1,1 +1,43 @@
 @import "tailwindcss";
+
+/* 全局样式补充 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 移动端输入框字体大小优化，防止iOS缩放 */
+@media screen and (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* 按钮点击波纹效果 */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button:active {
+  transform: scale(0.97);
+  transition: transform 0.1s;
+}

@@ -5,6 +5,7 @@ import WordCounter from './components/WordCounter'
 import TextFormatter from './components/TextFormatter'
 import CaseConverter from './components/CaseConverter'
 import MdToWechat from './components/MdToWechat'
+import SensitiveDetect from './components/SensitiveDetect'
 
 const TABS = [
   { id: 'wordcount', label: '字数统计' },
@@ -27,6 +28,8 @@ function App() {
         return <MdToWechat />
       case 'caseconvert':
         return <CaseConverter />
+      case 'sensitive':
+        return <SensitiveDetect />
       default:
         return (
           <div className="flex items-center justify-center h-64 text-gray-400 text-lg">
