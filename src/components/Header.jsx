@@ -10,7 +10,7 @@ function Header() {
           </span>
         </div>
         <a
-  href="https://wj.qq.com/s2/26613514/9a4e/"
+  href="https://wj.qq.com/s2/26614170/c064/"
   target="_blank"
   rel="noopener noreferrer"
   className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
