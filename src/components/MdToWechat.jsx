@@ -11,7 +11,7 @@ marked.setOptions({
 const THEME_KEYS = Object.keys(THEMES)
 
 function MdToWechat() {
-  const [markdown, setMarkdown] = useState('')
+  const [markdown, setMarkdown] = useState(DEFAULT_MARKDOWN)
   const [activeTheme, setActiveTheme] = useState(THEME_KEYS[0])
   const [copied, setCopied] = useState(false)
   const [previewMode, setPreviewMode] = useState('split') // split | preview
