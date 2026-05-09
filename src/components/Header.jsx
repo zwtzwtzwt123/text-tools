@@ -10,15 +10,13 @@ function Header() {
           </span>
         </div>
         <a
-          href="#"
-          className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
-          onClick={(e) => {
-            e.preventDefault()
-            alert('反馈功能即将上线，感谢关注！')
-          }}
-        >
-          💬 反馈建议
-        </a>
+  href="https://wj.qq.com/s2/26613514/9a4e/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+>
+  💬 反馈建议
+</a>
       </div>
     </header>
   )
